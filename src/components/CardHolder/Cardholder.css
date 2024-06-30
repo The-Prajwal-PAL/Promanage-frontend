@@ -1,0 +1,36 @@
+.card-container {
+  width: 360px;
+  border-radius: 10px;
+  background-color: #eef2f5;
+  height: calc(100vh - 160px);
+}
+.Card-Header-up {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h4 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+}
+.Card-icons-up {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  & >img{
+    cursor: pointer;
+  }
+}
+
+.board-card-container {
+  max-height: 100%;
+  height: 84%;
+  overflow-y: auto;
+  margin: 24px 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+

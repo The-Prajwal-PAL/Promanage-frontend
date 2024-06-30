@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.modal-container {
+  width: 335.19px;
+  height: 200px;
+  border-radius: 10.91px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+}
+.modal-container > p {
+  text-align: center;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 32px;
+  padding: 0 34px;
+  font-size: 16px;
+}
+.button-container {
+  margin-top: 32px;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 100px;
+}
+.outer {
+  position: relative;
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.todo-card-container {
+  width: 313px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: white;
+  /* z-index:0; */
+  position: relative;
+}
+
+.todo-card-content {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.todo-card-priority {
+  height: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-card-prior {
+  height: 12px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-card-priority-text {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  color: #707070;
+}
+
+.todo-cards-dots {
+  height: 100%;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+.todo-card-heading {
+  height: auto;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.todo-card-heading-text {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.todo-card-checklist {
+  height: auto;
+  margin-top: 24px;
+}
+
+.todo-checklist-heading {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & > h2 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    line-height: 16.94px;
+  }
+}
+
+.todo-checklist-content {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.down-icon {
+  padding: 1px;
+  & > img {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-top: 5px;
+  }
+}
+
+.todo-card-progress {
+  height: 22px;
+  margin-top: 27px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-card-progress-1 {
+}
+
+.todo-card-progress-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 6px;
+}
+
+.EditShare {
+  height: 120px;
+  width: 151px;
+  z-index: 10;
+  position: absolute;
+  top: 34px;
+  left: 134px;
+  right: 0;
+}

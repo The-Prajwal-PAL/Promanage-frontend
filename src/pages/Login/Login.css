@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.dash-container {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+}
+.form-container {
+  width: 669px;
+}
+
+.form-container > h3 {
+  font-family: "Open Sans";
+  font-size: 33.08px;
+  font-weight: 600;
+  line-height: 45.04px;
+  color: #343434;
+  margin-top: 180px;
+  padding: 0 291.5px;
+  margin-bottom: 88px;
+}
+
+.inputs-login {
+  width: 493.39px;
+  height: 132.31px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  gap: 22.05px;
+}
+.buttons-login {
+  width: 493.39px;
+  height: 191.38px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.noLogin-text {
+  margin-top: 33.8px;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 26.28px;
+  font-size: 19.29px;
+  color: #828282;
+  padding: 0 150.07px;
+}
+

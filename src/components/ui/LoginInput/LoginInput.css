@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:ital@0;1&display=swap');
+.login-input {
+  position: relative;
+  display: flex;
+  width: 493px;
+}
+
+.login-input > input {
+  border: 1.38px solid #d0d0d0;
+  width: 493px;
+  height: 55px;
+  border-radius: 11.03px;
+  padding-inline-start: 50px;
+  outline: none;
+}
+
+.login-input > input:focus {
+  border-color: #c0bfbf;
+}
+
+.icon {
+  position: absolute;
+  padding: 11.3px;
+  opacity: 50%;
+}
+
+.login-input > input::placeholder,
+.login-input > input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26.28px;
+}
+.icon-2 {
+  right: 0;
+}

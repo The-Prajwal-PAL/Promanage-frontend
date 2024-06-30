@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.editmodal-container {
+  height: 120px;
+  width: 151px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 3px 0px;
+  z-index: 100;
+  font-family: 'Poppins';
+  font-size: 14px;
+  box-shadow: 0px 1px 1px 1px #e2dfdf;
+}
+
+.editmodal-content {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  height: 74px;
+  justify-content: space-evenly;
+  gap: 22px;
+  & > div {
+    cursor: pointer;
+  }
+  & > div:hover {
+    background: #ebe7e7;
+    border-radius: 3px;
+  }
+}

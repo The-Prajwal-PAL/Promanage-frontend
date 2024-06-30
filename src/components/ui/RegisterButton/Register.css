@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 19.29px;
+  font-family: "Open Sans", sans-serif;
+  width: 493.39px;
+  height: 55.13px;
+  border-radius: 55.13px;
+  padding: 0 132.31px 0 132.31px;
+  gap: 11.03px;
+  cursor: pointer;
+}

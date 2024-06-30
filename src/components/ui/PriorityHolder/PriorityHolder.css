@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+
+.pr-container{
+    border: 1px solid #e2e2e2;
+    height:31px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.pr-container>p{
+    font-family:"Poppins";
+    font-weight: 500;
+    font-size: 12px;
+    color: #767676
+}

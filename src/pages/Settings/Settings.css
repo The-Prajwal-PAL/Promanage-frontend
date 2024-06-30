@@ -1,0 +1,14 @@
+.set-container {
+  margin-left: 44px;
+}
+.set-container > h3 {
+  margin-bottom: 49px;
+}
+.set-inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 22.05px;
+  width: 439.39px;
+  height: 209.49px;
+  margin-bottom: 44px;
+}

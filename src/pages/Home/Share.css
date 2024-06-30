@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.share-page{
+  display: flex;
+}
+
+.share-heading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+.share-items {
+  height: 24px;
+  margin-left: 43px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+  line-height: 24px;
+}
+.share-head {
+  width: 170px;
+  cursor: pointer;
+  margin-top: 32px;
+}
+.share-head > p {
+  font-weight: 700;
+}
+
+.share-container {
+  height: auto;
+  width: 45%;
+  border-radius: 12px;
+  background-color: #ffffff;
+  font-family: 'poppins', sans-serif;
+  border: 2px solid #EDF5FE;
+}
+.due{
+    font-size: 14px;
+}
+.share-content {
+  margin: 62px 32px 60px 32px;
+}
+
+.share-card-prior {
+  height: 12px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.share-card-priority-text {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  color: #707070;
+}
+
+.share-due-date {
+  display: flex;
+  margin-top: 18px;
+  height: 32px;
+  width: 150px;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share-card-heading {
+  height: auto;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.share-card-heading-text {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.share-card-checklist {
+  height: auto;
+  margin-top: 24px;
+}
+
+.share-checklist-heading {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & > h2 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    line-height: 16.94px;
+  }
+}
+
+.share-checklist-content {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  max-height: 360px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  .share-page{
+    flex-direction: column;
+  }
+  .share-container {
+    width: 90%;
+  }
+  .share-content {
+    margin: 24px;
+    margin-bottom: 50px;
+  }
+}
