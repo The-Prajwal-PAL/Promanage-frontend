@@ -7,8 +7,13 @@
 .set-inputContainer {
   display: flex;
   flex-direction: column;
-  gap: 22.05px;
+  gap: 20.05px;
   width: 439.39px;
-  height: 209.49px;
+  height: 300.49px;
   margin-bottom: 44px;
+  
+}
+
+.btnreg{
+  margin-top: 110px;
 }

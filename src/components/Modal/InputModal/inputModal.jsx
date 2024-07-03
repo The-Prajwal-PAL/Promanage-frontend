@@ -9,7 +9,7 @@ import { Button, PriorityHolder, TaskInput } from '../../index'
 import './inputModal.css'
 const InputModal = ({ closeModal }) => {
   const [title, setTitle] = useState('')
-  const [date, setDate] = useState('')
+  const [date, setDate] = useState(null)
   const [cal, setCal] = useState(false)
   const [priority, setPriority] = useState('')
   const [tasks, setTasks] = useState([])

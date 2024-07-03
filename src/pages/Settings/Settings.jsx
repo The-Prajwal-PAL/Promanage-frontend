@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "sonner";
+import { useNavigate } from "react-router-dom";
 import { LoginInput, PasswordInput, RegisterButton } from "../../components";
 import { useUpdateUserDetailsMutation } from "../../store/api/userProtectedApi";
 import "./Settings.css";
 import { setCredentials } from "../../store/slices/authSlice";
 const SettingsPage = () => {
   const {
-    userInfo: { userName },
+    userInfo: { userName , useremail}
   } = useSelector((state) => state.auth);
 
+  const navigate = useNavigate();
   const [inputVal, setInputVal] = useState({
     name: userName,
+    email:useremail,
     Oldpassword: "",
     newPassword: "",
   });
@@ -21,7 +24,8 @@ const SettingsPage = () => {
     try {
       const result = await detailsUpdate({
         name: inputVal.name,
-        currentPassword: inputVal.Oldpassword,
+        email:inputVal.email,
+        currentPassword: inputVal.Oldpassword,       
         newPassword: inputVal.newPassword,
       });
       if (result.error) {
@@ -30,6 +34,8 @@ const SettingsPage = () => {
       dispatch(setCredentials(result.data));
 
       toast.success("Profile updated successfully");
+      navigate("/login");
+      
     } catch (error) {
       console.log(error);
     }
@@ -46,6 +52,16 @@ const SettingsPage = () => {
           type="text"
           icon="name"
         />
+         <LoginInput
+            name="email"
+            value={inputVal.email}
+            setValue={setInputVal}
+            placeholder="email"
+            type="text"
+            icon="email"
+          />
+ 
+
         <PasswordInput
           name="Oldpassword"
           value={inputVal.Oldpassword}
@@ -54,6 +70,8 @@ const SettingsPage = () => {
           type="password"
           icon="password"
         />
+
+
         <PasswordInput
           name="newPassword"
           value={inputVal.newPassword}
@@ -63,12 +81,14 @@ const SettingsPage = () => {
           icon="password"
         />
       </div>
-      <RegisterButton
+      <RegisterButton 
+      className="btnreg"
         onclick={submitHandler}
         text="Update"
         color="#ffffff"
         border="none"
         bg="#17A2B8"
+        top="110px"
       />
     </div>
   );
